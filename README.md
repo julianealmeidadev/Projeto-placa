@@ -1,11 +1,9 @@
 # 🚗 Projeto de Reconhecimento de Placas
-
 Projeto experimental para envio e processamento de imagens com o objetivo de identificar placas veiculares.
 
 A aplicação utiliza **Node.js com Express** para receber imagens por upload e executa um script em **Python** responsável pelo processamento da imagem.
 
 ## 🎯 Objetivo
-
 O projeto foi criado para estudar a integração entre aplicações Node.js e Python, upload de arquivos e processamento de imagens.
 
 O fluxo atual funciona da seguinte forma:
@@ -21,18 +19,15 @@ O fluxo atual funciona da seguinte forma:
 ## 🛠️ Tecnologias utilizadas
 
 ### Backend
-
 - Node.js
 - Express.js
 - Multer
 
 ### Processamento de imagem
-
 - Python
 - OpenCV
 
 ## 📁 Estrutura do projeto
-
 ```text
 Projeto-placa/
 ├── plate_recognition.py
@@ -40,9 +35,9 @@ Projeto-placa/
 ├── package.json
 ├── package-lock.json
 └── .gitignore
-
-🚀 Como executar
-Pré-requisitos
+```
+## 🚀 Como executar
+### Pré-requisitos
 
 Antes de iniciar, tenha instalado:
 
@@ -50,20 +45,21 @@ Node.js
 npm
 Python
 OpenCV para Python
+
 1. Clone o repositório
-git clone https://github.com/julianealmeidadev/Projeto-placa.git
-cd Projeto-placa
+`git clone https://github.com/julianealmeidadev/Projeto-placa.git
+cd Projeto-placa`
 2. Instale as dependências do Node.js
-npm install
+`npm install`
 3. Instale o OpenCV no Python
-pip install opencv-python
+`pip install opencv-python`
 4. Inicie o servidor
-node server.js
+`node server.js`
 
 O servidor ficará disponível em:
-
 http://localhost:8000
-📡 Rotas disponíveis
+
+### 📡 Rotas disponíveis
 Teste da API
 POST /test
 
@@ -75,7 +71,7 @@ POST /upload
 
 O campo enviado deve se chamar:
 
-image
+  image
 
 Exemplo de resposta:
 
@@ -86,7 +82,7 @@ O fluxo de upload e comunicação entre Node.js e Python já está implementado.
 
 O reconhecimento real da placa ainda está em desenvolvimento. Atualmente, o script Python utiliza um retorno de teste para validar a integração entre as tecnologias.
 
-🔜 Próximas melhorias
+## 🔜 Próximas melhorias
 Implementar reconhecimento real de caracteres da placa
 Aplicar processamento de imagem com OpenCV
 Detectar automaticamente a região da placa
@@ -96,8 +92,8 @@ Melhorar tratamento de erros
 Criar interface web para envio de imagens
 Adicionar testes automatizados
 Criar documentação da API
-💡 Aprendizados
 
+## 💡 Aprendizados
 Este projeto envolve conceitos como:
 
 criação de APIs com Express
@@ -106,8 +102,7 @@ integração entre Node.js e Python
 execução de scripts externos
 manipulação de arquivos temporários
 processamento de imagens com OpenCV
-👩‍💻 Autora
 
+## 👩‍💻 Autora
 Juliane Almeida
-
-GitHub: @julianealmeidadev
+Github: https://github.com/julianealmeidadev
